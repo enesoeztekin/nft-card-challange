@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1a2d;
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #15273f;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba($color: #0f0f0f, $alpha: 0.3);
+    .nft-image {
+      position: relative;
+      .nft-thumbnail {
+        cursor: pointer;
+        width: 400px;
+        align-self: center;
+        border-radius: 10px;
+      }
+      .hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba($color: #00fff7, $alpha: 0.4);
+        display: none;
+        place-items: center;
+        border-radius: 10px;
+      }
+    }
+
+    .nft-details {
+      padding-top: 2rem;
+      .nft-name {
+        font-size: 1.5rem;
+        justify-self: start;
+        align-items: start;
+        cursor: pointer;
+        &:hover {
+          color: hsl(178, 100%, 50%);
+        }
+      }
+      .nft-desc {
+        font-weight: 300;
+        text-decoration: none;
+        color: #8fa6c6;
+        font-size: 1.25rem;
+        max-width: 350px;
+        padding: 1rem 0;
+      }
+    }
+    hr {
+      margin: 1rem 0;
+      border: none;
+      border-top: 1px solid rgba($color: #6b6b6b, $alpha: 0.3);
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .price {
+        display: flex;
+        flex-direction: row;
+        gap: 0.25rem;
+        color: hsl(178, 100%, 50%);
+      }
+      .day-left {
+        display: flex;
+        flex-direction: row;
+        gap: 0.25rem;
+        color: #8fa6c6;
+      }
+    }
+    .creator {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      justify-content: start;
+      align-items: center;
+      img {
+        width: 30px;
+        border-radius: 50%;
+        border: 1px solid white;
+      }
+      .attribition {
+        color: #8fa6c6;
+        span {
+          color: white;
+          cursor: pointer;
+          &:hover {
+            color: hsl(178, 100%, 50%);
+          }
+        }
+      }
+    }
+  }
+}

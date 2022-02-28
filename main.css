@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1a2d;
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+
+main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #15273f;
+  padding: 2rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 15px rgba(15, 15, 15, 0.3);
+          box-shadow: 0px 0px 15px rgba(15, 15, 15, 0.3);
+}
+
+main .card .nft-image {
+  position: relative;
+}
+
+main .card .nft-image .nft-thumbnail {
+  cursor: pointer;
+  width: 400px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 10px;
+}
+
+main .card .nft-image .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 255, 247, 0.4);
+  display: none;
+  place-items: center;
+  border-radius: 10px;
+}
+
+main .card .nft-details {
+  padding-top: 2rem;
+}
+
+main .card .nft-details .nft-name {
+  font-size: 1.5rem;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  cursor: pointer;
+}
+
+main .card .nft-details .nft-name:hover {
+  color: #00fff7;
+}
+
+main .card .nft-details .nft-desc {
+  font-weight: 300;
+  text-decoration: none;
+  color: #8fa6c6;
+  font-size: 1.25rem;
+  max-width: 350px;
+  padding: 1rem 0;
+}
+
+main .card hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid rgba(107, 107, 107, 0.3);
+}
+
+main .card .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .card .row .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.25rem;
+  color: #00fff7;
+}
+
+main .card .row .day-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.25rem;
+  color: #8fa6c6;
+}
+
+main .card .creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .card .creator img {
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+main .card .creator .attribition {
+  color: #8fa6c6;
+}
+
+main .card .creator .attribition span {
+  color: white;
+  cursor: pointer;
+}
+
+main .card .creator .attribition span:hover {
+  color: #00fff7;
+}
+/*# sourceMappingURL=main.css.map */
